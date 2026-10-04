@@ -29,6 +29,11 @@ compatibility:
 
 from .gitignore import (
 	GitIgnoreSpec)
+from .hierignore import (
+	HierIgnoreEvaluator,
+	IgnoreDecision,
+	IgnoreRule,
+	IgnoreSnapshot)
 from .pathspec import (
 	PathSpec)
 from .pattern import (
@@ -55,6 +60,10 @@ from . import patterns
 # are deliberately excluded.
 __all__ = [
 	'GitIgnoreSpec',
+	'HierIgnoreEvaluator',
+	'IgnoreDecision',
+	'IgnoreRule',
+	'IgnoreSnapshot',
 	'PathSpec',
 	'Pattern',
 	'RecursionError',

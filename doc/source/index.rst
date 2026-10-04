@@ -12,6 +12,7 @@ Welcome to pathspec's documentation!
    :maxdepth: 2
 
    readme
+   hierignore
    api
    changes
    upgrading

@@ -15,6 +15,7 @@ API changes:
 
 New features:
 
+- Added `pathspec.hierignore.HierIgnoreEvaluator`: hierarchical gitignore evaluation from a root rule snapshot plus per-subdirectory snapshots. It reports the source file and rule line that took effect, keeps excluded directories un-rescuable by child rules, judges directories and files separately, and is immutable (rule updates create new snapshots/evaluators).
 - `Issue #126`_: `.iter_tree_files()` / `.iter_tree_entries()` methods now have a *subdir* parameter to allow traversing only part of the tree.
 - `GitIgnoreBasicPattern` and `GitIgnoreSpecPattern` now accept an `errors` argument to `__init__()` and `pattern_to_regex()` to control how invalid patterns are handled.
 
