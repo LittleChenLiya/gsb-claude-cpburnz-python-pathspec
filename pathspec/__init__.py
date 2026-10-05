@@ -34,6 +34,12 @@ from .pathspec import (
 from .pattern import (
 	Pattern,
 	RegexPattern)
+from .selector import (
+	Candidate,
+	PathSelector,
+	RejectedCandidate,
+	SelectionResult,
+	select_paths)
 from .util import (
 	RecursionError,
 	iter_tree,  # Deprecated since 0.10.0.
@@ -54,15 +60,20 @@ from . import patterns
 # Declare private imports as part of the public interface. Deprecated imports
 # are deliberately excluded.
 __all__ = [
+	'Candidate',
 	'GitIgnoreSpec',
+	'PathSelector',
 	'PathSpec',
 	'Pattern',
 	'RecursionError',
 	'RegexPattern',
+	'RejectedCandidate',
+	'SelectionResult',
 	'__author__',
 	'__copyright__',
 	'__credits__',
 	'__license__',
 	'__version__',
 	'lookup_pattern',
+	'select_paths',
 ]
