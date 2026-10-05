@@ -34,6 +34,9 @@ from .pathspec import (
 from .pattern import (
 	Pattern,
 	RegexPattern)
+from .suggester import (
+	Suggestion,
+	suggest_rules)
 from .util import (
 	RecursionError,
 	iter_tree,  # Deprecated since 0.10.0.
@@ -59,10 +62,12 @@ __all__ = [
 	'Pattern',
 	'RecursionError',
 	'RegexPattern',
+	'Suggestion',
 	'__author__',
 	'__copyright__',
 	'__credits__',
 	'__license__',
 	'__version__',
 	'lookup_pattern',
+	'suggest_rules',
 ]
