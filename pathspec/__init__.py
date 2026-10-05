@@ -51,6 +51,13 @@ from ._version import (
 # Load pattern implementations.
 from . import patterns
 
+from .suggest import (
+	EXHAUSTED,
+	OPTIMAL,
+	Suggestion,
+	suggest_rules,
+	verify_rules)
+
 # Declare private imports as part of the public interface. Deprecated imports
 # are deliberately excluded.
 __all__ = [
@@ -65,4 +72,9 @@ __all__ = [
 	'__license__',
 	'__version__',
 	'lookup_pattern',
+	'suggest_rules',
+	'verify_rules',
+	'Suggestion',
+	'OPTIMAL',
+	'EXHAUSTED',
 ]
